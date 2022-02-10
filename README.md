@@ -7,6 +7,12 @@
 
 ## Order of Operations
 
--sketch layout of page with tags
--create supabase table
--add fetch-utils.js file
+x sketch layout of page with tags
+x create supabase table
+x add fetch-utils.js file URL and key
+-set up index pages for primary and detail index
+-write test for renderFunctions (two tests-one for main page and one for details page)
+-write fetch function. consolelog. Loop through items, render then append.
+-design primary html
+-add findById function to fetchutils. consolelog to ensure data returns from supabase
+-render and append
