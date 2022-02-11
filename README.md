@@ -15,6 +15,6 @@ x set up index pages for primary and detail index
 x write fetch function. consolelog.
 x update app.js (import and add window.addeventlistener-Loop through items, render then append)
 x write renderfunction
-x design details html add anchor tag
--add findById function to fetchutils. consolelog to ensure data returns from supabase
+x design details html, add anchor tag
+-add findById function. consolelog
 -render and append
