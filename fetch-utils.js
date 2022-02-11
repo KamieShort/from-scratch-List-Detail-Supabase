@@ -19,8 +19,8 @@ export async function fetchFamily() {
 }
 
 export async function fetchMember(id) {
-    const resp = await client.from('family-data').select('*').match({ id: id }).single();
+    const resp = await client.from('family-data').select('*').eq('id', id).single();
     // eslint-disable-next-line no-console
-    console.log('test', resp);
+    // console.log('test', resp);
     return checkError(resp);
 }

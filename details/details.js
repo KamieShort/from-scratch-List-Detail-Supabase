@@ -13,7 +13,7 @@ async function loadData() {
     const member = await fetchMember(id);
     // console.log(member);
 
-    const memberDetailContainer = document.getElementById('member-detail-container');
+    // const memberDetailContainer = document.getElementById('member-detail-container');
     const name = document.getElementById('name');
     name.id = member.name;
     const age = document.getElementById('age');
@@ -32,8 +32,8 @@ async function loadData() {
     favFood.textContent = `Favorite Food: ${member.fav_food}`;
     image.src = `../assets/${member.name}.jpeg`;
 
-    const div = fetchMember(member);
-    memberDetailContainer.append(div);
-    console.log(member);
+    // const div = fetchMember(member);
+    // memberDetailContainer.append(div);
+    // console.log(member);
 }
 loadData();

@@ -1,1 +1,4 @@
-/* add home page styles here */
+#member-image {
+    height: 400px;
+    border-radius: 10%;
+}
