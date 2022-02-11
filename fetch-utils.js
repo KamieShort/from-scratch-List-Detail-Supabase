@@ -9,14 +9,15 @@ function checkError({ data, error }) {
 }
 
 export async function fetchFamily() {
-    const resp = await client.from('family_data').select('*');
-    // console.log(resp);
+    const resp = await client.from('family-data').select('*');
+    console.log(resp, 'test');
 
     return checkError(resp);
+    // return resp;
 }
 
 export async function fetchMember(id) {
-    const resp = await client.from('family_data').select('*').eq('id', id).single();
+    const resp = await client.from('family-data').select('*').eq('id', id).single();
     console.log(resp);
     return checkError(resp);
 }

@@ -15,6 +15,6 @@ x set up index pages for primary and detail index
 -write fetch function. consolelog. Loop through items, render then append
 -update app.js (import and add window.addeventlistener)
 -write renderfunction
--design primary html
+x design primary html
 -add findById function to fetchutils. consolelog to ensure data returns from supabase
 -render and append
