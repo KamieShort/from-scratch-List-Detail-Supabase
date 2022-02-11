@@ -7,7 +7,7 @@ const test = QUnit.test;
 test('renderFamily should return <li> with family info', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<li><a.href=/details/?id=</li>`;
+    const expected = `<li class="member-list"><a href="/details/?id=Amanda"></a></li>`;
 
     //Act
     // Call the function you're testing and set the result to a const
