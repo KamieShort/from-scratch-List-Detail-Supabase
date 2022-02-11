@@ -1,19 +1,20 @@
-// // import { findById } from '../utils.js';
+// import { fetchMember } from '../fetch-utils.js';
 import { fetchMember } from '../fetch-utils.js';
+// import { renderMemberDetails } from '../render-utils.js';
 
-// console.log('is this details page working?');
-// console.log(window.location);
+// const memberList = document.getElementById('member-detail-container');
+
 // // eslint-disable-next-line space-before-function-paren
 // // window.addEventListener('load', async () => {
 // //     console.log(member);
+
 async function loadData() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
     // console.log(id);
     const member = await fetchMember(id);
-    // console.log(member);
+    //     console.log(member);
 
-    // const memberDetailContainer = document.getElementById('member-detail-container');
     const name = document.getElementById('name');
     name.id = member.name;
     const age = document.getElementById('age');
@@ -37,3 +38,20 @@ async function loadData() {
     // console.log(member);
 }
 loadData();
+
+// eslint-disable-next-line space-before-function-paren
+// window.addEventListener('load', async () => {
+//     const li = renderMemberDetails();
+//     renderMemberDetails.append(li);
+// });
+// // });
+
+// eslint-disable-next-line space-before-function-paren
+// window.addEventListener('load', async () => {
+//     const member = await fetchMember();
+//     const li = renderMemberDetails();
+//     console.log(member);
+
+//     memberList.append(li);
+
+// });
