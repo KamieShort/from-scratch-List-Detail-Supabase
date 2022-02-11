@@ -7,6 +7,7 @@ const familyList = document.getElementById('family-list');
 // eslint-disable-next-line space-before-function-paren
 window.addEventListener('load', async () => {
     const members = await fetchFamily();
+    // eslint-disable-next-line no-console
     console.log(members);
 
     for (let member of members) {

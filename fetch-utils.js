@@ -5,11 +5,13 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 function checkError({ data, error }) {
+    // eslint-disable-next-line no-console
     return error ? console.error(error) : data;
 }
 
 export async function fetchFamily() {
     const resp = await client.from('family-data').select('*');
+    // eslint-disable-next-line no-console
     console.log(resp, 'test');
 
     return checkError(resp);
@@ -18,6 +20,7 @@ export async function fetchFamily() {
 
 export async function fetchMember(id) {
     const resp = await client.from('family-data').select('*').eq('id', id).single();
+    // eslint-disable-next-line no-console
     console.log(resp);
     return checkError(resp);
 }
