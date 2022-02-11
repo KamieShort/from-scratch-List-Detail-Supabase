@@ -1,13 +1,13 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { renderDetails } from '../utils.js';
+import { renderDetails } from '../render-utils.js';
 
 const test = QUnit.test;
 
 test('renderFamily should return <li> with family info', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<li id="family-list"></li>`;
+    const expected = `<li><a.href=/details/?id=</li>`;
 
     //Act
     // Call the function you're testing and set the result to a const
