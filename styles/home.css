@@ -1,3 +1,5 @@
+@main {
+}
 #main-index {
     background-color: cadetblue;
 }
@@ -13,19 +15,22 @@
     justify-content: space-around;
 }
 #member-image {
-    height: 400px;
+    height: 50px;
     border-radius: 10%;
     align-content: center;
 }
-#images {
+/* #images {
     height: 300px;
     border-radius: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} */
 img {
     border-radius: 10%;
+    height: 200px;
+    /* border: solid; */
+    /* justify-content: space-around; */
 }
 
 #details-index {
@@ -52,6 +57,11 @@ P {
     text-align: center;
 }
 #main-page {
+    justify-content: center;
+    text-align: center;
+}
+
+#container {
     justify-content: center;
     text-align: center;
 }
