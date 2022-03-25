@@ -1,1 +1,65 @@
-/* add home page styles here */
+#main-index {
+    background-color: cadetblue;
+}
+#meet {
+    color: coral;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+#family-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#member-image {
+    height: 50px;
+    border-radius: 10%;
+    align-content: center;
+}
+/* #images {
+    height: 300px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+img {
+    border-radius: 10%;
+    height: 200px;
+    /* border: solid; */
+    /* justify-content: space-around; */
+}
+
+#details-index {
+    background-color: darkslateblue;
+    /* margin-left: 40%; */
+}
+h2 {
+    color: pink;
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    color: orange;
+    font-family: 'Pacifico', cursive;
+}
+
+P {
+    color: pink;
+    font-family: 'Give You Glory', cursive;
+}
+
+#member-detail-container {
+    justify-content: center;
+    text-align: center;
+}
+#main-page {
+    justify-content: center;
+    text-align: center;
+}
+
+#container {
+    justify-content: center;
+    text-align: center;
+}
